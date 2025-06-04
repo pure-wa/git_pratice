@@ -43,3 +43,19 @@ git diff A B
 git diff commitID1 commitID2
 git diff branch1 branch1
 
+# 가장 최신의 커밋 취소
+git revert hard-1
+git revert hard^
+
+# 이미 push된 commit사항 되돌리기 (완전한 취소아님): commitID생성
+git revert 커밋ID
+
+# 작업중인 사항을 임시 저장
+git stash
+# 마지막 저장한 사항을 꺼네서 적용
+git stash app
+# 지정한 작업목록 조회
+git stash list
+# 저장한 목록 전체 삭제
+git stash clear
+
