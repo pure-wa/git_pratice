@@ -30,3 +30,16 @@ git push origin 브렌치명 --force
 git checkout 커밋ID
 # 특정 branch로의 전환
 git checkout 브랜치명
+
+
+#pull은 원격변경사항을 local로 내려받는것(fetch +merge)
+git pull origin main
+#fetch : 변경사항을 local로 가져오되 merge하지 않는 것
+git fetch origin main
+# 만약 모든 브랜치에 변경사항을 가져오려면
+git fetch -all
+# 버전별(commit간 or branch간)별 비교 명령어
+git diff A B
+git diff commitID1 commitID2
+git diff branch1 branch1
+
